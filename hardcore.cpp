@@ -13,7 +13,7 @@ int main()
 
     do
     {
-        cout << "\n\tSelect Operation [+, -, /, *]: ";
+        cout << "\n\tSelect Operation [+, -, *, /]: ";
         cin >> choice;
 
         cout << "Enter two operands: ";
@@ -27,7 +27,46 @@ int main()
                 cin >> resume;
                 if (resume == 'N' ||resume == 'n')
                 {
-                    printf("\nThank you for using my calculator");
+                    printf("\n\tThank you for using my calculator!\n\n");
+                    break;
+                }
+                else 
+                {
+                    continue;
+                }
+            case '-':
+                cout << "The difference is " << num1 - num2;
+                cout << "\nWould you like to calculate again? [Y/N]: ";
+                cin >> resume;
+                if (resume == 'N' ||resume == 'n')
+                {
+                    printf("\n\tThank you for using my calculator!\n\n");
+                    break;
+                }
+                else 
+                {
+                    continue;
+                }
+            case '*':
+                cout << "The product is " << num1 * num2;
+                cout << "\nWould you like to calculate again? [Y/N]: ";
+                cin >> resume;
+                if (resume == 'N' ||resume == 'n')
+                {
+                    printf("\n\tThank you for using my calculator!\n\n");
+                    break;
+                }
+                else 
+                {
+                    continue;
+                }
+            case '/':
+                cout << "The quotient is " << num1 / num2;
+                cout << "\nWould you like to calculate again? [Y/N]: ";
+                cin >> resume;
+                if (resume == 'N' ||resume == 'n')
+                {
+                    printf("\n\tThank you for using my calculator!\n\n");
                     break;
                 }
                 else 
