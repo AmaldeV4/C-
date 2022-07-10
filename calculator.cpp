@@ -17,12 +17,12 @@ int main()
 
         while (choice != '+' &&choice != '-' &&choice != '*' &&choice != '/')
         {
-            printf("Invalid Operation!\n");
+            printf("\tInvalid Operation!\n");
             cout << "\n\tSelect Operation [+, -, *, /]: ";
             cin >> choice;
         }
 
-        cout << "Enter two operands: ";
+        cout << "\tEnter two operands: ";
         cin >> num1 >> num2;
 
         switch(choice)
@@ -68,7 +68,7 @@ int main()
                 }
             case '/':
                 cout << "The quotient is " << num1 / num2;
-                cout << "\nWould you like to calculate again? [Y/N]: ";
+                cout << "\n\n\tWould you like to calculate again? [Y/N]: ";
                 cin >> resume;
                 if (resume == 'N' ||resume == 'n')
                 {
@@ -80,9 +80,6 @@ int main()
                     continue;
                 }
                 
-            default:
-                printf("Invalid!");
-                break;
         }
     } while (resume == 'Y' || resume == 'y');
     
