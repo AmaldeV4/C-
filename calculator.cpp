@@ -1,8 +1,7 @@
 #include <iostream>
-
 using namespace std;
 
-char resume;
+char resume; 
 
 
 int main()
@@ -15,6 +14,13 @@ int main()
     {
         cout << "\n\tSelect Operation [+, -, *, /]: ";
         cin >> choice;
+
+        while (choice != '+' ||choice != '-' ||choice != '*' ||choice != '/')
+        {
+            printf("Invalid Operation!\n");
+            cout << "\n\tSelect Operation [+, -, *, /]: ";
+            cin >> choice;
+        }
 
         cout << "Enter two operands: ";
         cin >> num1 >> num2;
