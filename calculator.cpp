@@ -15,7 +15,7 @@ int main()
         cout << "\n\tSelect Operation [+, -, *, /]: ";
         cin >> choice;
 
-        while (choice != '+' ||choice != '-' ||choice != '*' ||choice != '/')
+        while (choice != '+' &&choice != '-' &&choice != '*' &&choice != '/')
         {
             printf("Invalid Operation!\n");
             cout << "\n\tSelect Operation [+, -, *, /]: ";
